@@ -1,0 +1,13 @@
+.finance-page p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.finance-page h2, 
+.finance-page h4 {
+  color: #003049;
+}
+
+.finance-page h5 {
+  color: #004868;
+}

@@ -1,0 +1,107 @@
+     .acme-section {
+         background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+         min-height: 100vh;
+         padding: 60px 0;
+     }
+
+     .acme-container {
+         max-width: 1200px;
+         margin: auto;
+         padding: 0 20px;
+     }
+
+     .acme-header {
+         text-align: center;
+         margin-bottom: 40px;
+     }
+
+     .acme-title {
+         font-size: 2.4rem;
+         font-weight: bold;
+         color: #2c3e50;
+     }
+
+     .acme-subtitle {
+         font-size: 1.6rem;
+         color: #1E5E7E;
+         font-weight: 700;
+     }
+
+     .acme-grid {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .acme-col {
+         flex: 0 0 20%;
+         max-width: 20%;
+         padding: 10px;
+     }
+
+     @media (max-width: 1200px) {
+         .acme-col {
+             flex: 0 0 25%;
+             max-width: 25%;
+         }
+     }
+
+     @media (max-width: 992px) {
+         .acme-col {
+             flex: 0 0 33.33%;
+             max-width: 33.33%;
+         }
+     }
+
+     @media (max-width: 768px) {
+         .acme-col {
+             flex: 0 0 50%;
+             max-width: 50%;
+         }
+     }
+
+     @media (max-width: 576px) {
+         .acme-col {
+             flex: 0 0 100%;
+             max-width: 100%;
+         }
+     }
+
+     .acme-card {
+         background: white;
+         border-radius: 16px;
+         padding: 20px 15px;
+         text-align: center;
+         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+         transition: all 0.3s ease;
+         border: 1px solid #e0e0e0;
+     }
+
+     .acme-card:hover {
+         background: linear-gradient(135deg, #1E5E7E, #00ACD2);
+         color: white;
+         transform: translateY(-5px) scale(1.02);
+     }
+
+     .acme-card:hover .acme-title-text,
+     .acme-card:hover .acme-desc,
+     .acme-card:hover .acme-icon {
+         color: white;
+     }
+
+     .acme-icon {
+         font-size: 2rem;
+         color: #1E5E7E;
+         margin-bottom: 10px;
+     }
+
+     .acme-title-text {
+         font-size: 1.05rem;
+         font-weight: bold;
+         color: #004867;
+     }
+
+     .acme-desc {
+         font-size: 0.8rem;
+         color: #444;
+     }

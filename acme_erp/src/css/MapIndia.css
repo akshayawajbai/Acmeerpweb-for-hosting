@@ -1,0 +1,178 @@
+.map-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.india-svg {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  left: 90px;
+  margin-top: 20px;
+}
+
+.map-container {
+  height: 550px;
+margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.50);
+  border-radius: 12px; /* Optional: adds rounded corners */
+  background-color: #fff; /* Optional: helps shadow stand out */
+}
+
+.clients {
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 200px;
+}
+
+.clients__heading {
+  color: #18183A;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.clients__summary {
+  max-width: 300px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.clients__highlight {
+  color: #1E0A62;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.clients__active {
+  font-weight: bold;
+  color: #00C4FF;
+  font-size: 1.4rem;
+}
+
+.state-label {
+  font-size: 20px;
+  font-weight: 1000;
+  fill: #00ACD2;
+ stroke: black;
+  stroke-width: 0.5;
+}
+
+.blink-state {
+  fill: orange;
+  stroke: rgb(230, 0, 19);
+  stroke-width: 1;
+  animation: blink 1.5s infinite;
+  
+}
+
+@keyframes blink {
+  0% { fill: orange; }
+  50% { fill: #fff176; }
+  100% { fill: orange; }
+}
+
+.glow-dot {
+  fill: #00c4ff;
+  stroke: #fff;
+  stroke-width: 1;
+   filter: drop-shadow(0 0 50px #00c4ff);
+}
+
+.ping {
+  fill: rgba(0, 196, 255, 0.5);
+  animation: ping-animation 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping-animation {
+  0% {
+    r: 0;
+    opacity: 1;
+  }
+  70% {
+    r: 60;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.map-wrapper {
+  padding: 2rem 1rem;
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}
+.map-title {
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+
+  /* Gradient text */
+  background: linear-gradient(90deg, #00c4ff, #004867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  /* Shine animation */
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-layout,
+  .map-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .map-container {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .india-svg {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .clients {
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .clients__heading {
+    font-size: 2rem;
+  }
+
+  .clients__summary {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto 1rem;
+  }
+
+  .clients__highlight {
+    font-size: 1.4rem;
+  }
+
+  .clients__active {
+    font-size: 1.2rem;
+  }
+
+  .state-label {
+    font-size: 14px;
+  }
+}

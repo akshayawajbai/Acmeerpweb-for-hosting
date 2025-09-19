@@ -1,0 +1,37 @@
+
+
+/* Outer Ring */
+.cursor-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border: 1px solid rgba(30, 94, 126, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.90s ease-out;
+  z-index: 9998;
+}
+
+/* Inner Dot */
+.cursor-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: rgba(30, 94, 126, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+}
+
+/* Click Animation on Outer Ring */
+.cursor-outer.click-expand {
+  transform: translate(-50%, -50%) scale(1.8);
+  border-color: rgba(255, 255, 255, 0.5);
+}

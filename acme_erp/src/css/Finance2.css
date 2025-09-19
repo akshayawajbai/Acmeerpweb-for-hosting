@@ -1,0 +1,48 @@
+.finance-page {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.finance-page h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #004868;
+  margin-bottom: 20px;
+}
+
+.finance-page h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #003650;
+}
+
+.finance-page h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+.finance-page p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.finance-page ul {
+  padding-left: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.finance-page ul li {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #444;
+}

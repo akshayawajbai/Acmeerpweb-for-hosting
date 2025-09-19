@@ -1,0 +1,254 @@
+.cards-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 2rem 0;
+  scroll-snap-type: x mandatory;
+  /* width: 1200px; */
+}
+
+.cards-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 360px;
+  min-width: 360px;
+  min-height: 320px;
+  margin: 0 1.5rem;
+  background: #EFF1F9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease-in-out;
+  scroll-snap-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cccccc77;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #027FB7;
+  
+  z-index: 1;
+  transition: right 0.5s cubic-bezier(0.4, 0, 0.5, 1);
+  pointer-events: none;
+}
+
+.card:hover::after {
+  right: 0;
+}
+
+.card-body,
+.icon,
+.card-title,
+.card-text {
+  position: relative;
+  z-index: 2;
+}
+
+.icon {
+  color: #2196f3;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.1);
+  color: #2196f3;
+}
+
+.card-title {
+  color: #004868;
+  margin: 1.5rem 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-title span {
+  position: relative;
+  z-index: 2;
+}
+
+.card-icon {
+  border: 3px solid #004868;
+  border-radius: 100%;
+  padding: 0.5rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-sizing: border-box;
+}
+
+.icon-inner img {
+  width: 40px;
+  object-fit: contain;
+  bottom: -7px;
+  display: block;
+}
+
+
+
+
+.card-text {
+  color: #546e7a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .icon {
+  color: #fff !important;
+  
+  
+}
+.card:hover .card-icon {
+  border-color: #fff;
+  background: #004868;
+
+}.card-icon {
+  position: relative;
+  transition: background 0.4s ease, border-color 0.4s ease;
+  border: 3px solid #004868;
+  border-radius: 100%;
+  padding: 0.5rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #004868;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: width 0.5s ease, height 0.5s ease, transform 0.5s ease;
+  z-index: -1;
+}
+
+.card:hover .card-icon::before {
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.card:hover .card-icon {
+  border-color: #fff;
+  color: #fff;
+}
+
+.card:hover .icon-inner {
+  filter: brightness(0) invert(1);
+  animation: flipX 0.5s;  
+}
+.benifit-subtitle {
+  font-size: 1rem !important;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+
+@keyframes flipX {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 300px;
+    min-width: 300px;
+    min-height: 300px;
+  }
+}
+.cards-container {
+  position: relative;
+}
+
+.acme–cards { position: relative; } /* optional wrapper */
+
+.acme-cards__arrow {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  /* BASE: white bg, teal arrow */
+  background: #fff;
+  color: #003e5d;                /* arrow color */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  padding: 10px;
+  font-size: 17px;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+/* make sure the icon takes the button's color */
+.acme-cards__arrow svg { color: currentColor; }
+
+/* positions */
+.acme-cards__arrow--prev { left: -50px; }
+.acme-cards__arrow--next { right: -50px; }
+
+/* HOVER: teal bg, white arrow */
+.acme-cards__arrow:hover {
+  background: #003e5d;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,62,93,0.25);
+}
+
+/* optional: hide on small screens */
+@media (max-width: 767.98px) {
+  .acme-cards__arrow { display: none; }
+}
+/* Hide arrows up to and including 1100px */
+@media (max-width: 1200px) {
+  .acme-cards .acme-cards__arrow {
+    display: none !important;
+  }
+}
+
+/* (optional) ensure they show above 1100px */
+@media (min-width: 1101px) {
+  .acme-cards .acme-cards__arrow {
+    display: inline-flex;
+  }
+}

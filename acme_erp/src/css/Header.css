@@ -1,0 +1,134 @@
+.header-top {
+  background-color: #1e5e7e !important;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info {
+  gap: 0;
+}
+
+.contact-text {
+  font-size: 13px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.follow-text {
+  font-size: 13px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.social-link:hover.facebook {
+  background-color: #3b5998;
+}
+
+.social-link:hover.twitter {
+  background-color: #1da1f2;
+}
+
+.social-link:hover.linkedin {
+  background-color: #0077b5;
+}
+
+.social-link:hover.instagram {
+  background-color: #e4405f;
+}
+
+.social-link:hover.youtube {
+  background-color: #ff0000;
+}
+
+.social-link:hover.whatsapp {
+  background-color: #25d366;
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .header-top {
+    padding: 8px 0 !important;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  .contact-info > div {
+    margin-bottom: 4px !important;
+    margin-right: 0 !important;
+  }
+  
+  .social-icons {
+    margin-top: 8px;
+  }
+  
+  .follow-text {
+    font-size: 12px;
+  }
+  
+  .contact-text {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  .header-top {
+    text-align: center;
+  }
+  
+  .contact-info > div {
+    width: 100%;
+    justify-content: center !important;
+  }
+  
+  .social-link {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+  
+  .follow-text {
+    display: none;
+  }
+  
+  .social-icons {
+    justify-content: center !important;
+    width: 100%;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 756px) {
+  .contact-info {
+    display: none !important;
+  }
+  
+  .social-link {
+    width: 22px;
+    height: 22px;
+    margin: 0 2px;
+  }
+}

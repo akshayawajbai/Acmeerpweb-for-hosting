@@ -1,0 +1,132 @@
+/* Root layout: center the card on the page */
+.acme-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-family: "Lato", "Montserrat", system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+}
+
+.acme-login-wrap {
+  width: 100%;
+  max-width: 400px;
+  margin-top: -135px;
+  padding: 0 15px;
+}
+
+/* Title */
+.acme-login-title {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+/* Card */
+.acme-login-card {
+  margin-top: 8px;
+  padding: 15px 24px 24px 24px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
+}
+
+/* Logo */
+.acme-login-logo {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 12px auto;
+  display: block;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Form + inputs */
+.acme-login-form {
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.acme-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.acme-input:focus {
+  border-color: #70c6e8;
+  box-shadow: 0 0 0 3px rgba(112, 198, 232, 0.25);
+}
+
+/* Button */
+.acme-submit-btn {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background-color: #2b7bbf;
+  color: #fff;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+.acme-submit-btn:hover {
+  background-color: #2469a3;
+}
+
+/* Message */
+.acme-login-alert {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  color: #d8000c;
+  text-align: center;
+}
+
+/* Footer */
+.acme-login-footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.acme-login-footer a {
+  color: #70c6e8;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.acme-login-footer a:hover {
+  text-decoration: underline;
+}
+
+.acme-login-page input,
+.acme-login-page textarea,
+.acme-login-page select {
+  color: #111;           
+  caret-color: #111;     
+  background-color: #fff; 
+}
+
+.acme-login-page ::placeholder {
+  color: #6b7280;
+  opacity: 1;     
+}
+
+.acme-login-page input:-webkit-autofill,
+.acme-login-page input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111 !important;
+  transition: background-color 9999s ease-out 0s;
+}
