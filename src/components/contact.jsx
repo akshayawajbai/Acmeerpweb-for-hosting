@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../css/Contact.css';
+import '../css/contact.css';
 // import { useLocation, useNavigate } from 'react-router-dom';
 
 
