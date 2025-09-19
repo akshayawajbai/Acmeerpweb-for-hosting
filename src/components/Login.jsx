@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
-import "../css/login.css";
+import "../css/Login.css";
 import Acme_logo from "../assets/icon.png";
 import login_bg from "../assets/img/bg/loginbg3.jpg";
 
