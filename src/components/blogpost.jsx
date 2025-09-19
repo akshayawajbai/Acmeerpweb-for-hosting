@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/blogPost.css';
+import '../css/blogpost.css';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { FaCalendar } from "react-icons/fa";
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
