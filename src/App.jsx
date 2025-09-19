@@ -14,7 +14,7 @@ import Plan from './components/Plan.jsx';
 import Question from './components/Question.jsx';
 import Review from './components/Review.jsx';
 import Streamlines from './components/Streamlines.jsx';
-import Finance from './page/finance.jsx';
+import Finance from './page/Finance.jsx';
 import Finance2 from './components/Finance2.jsx';
 import Contact from './components/contact.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
